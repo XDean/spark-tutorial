@@ -1,0 +1,10 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+
+@import "./md.css";
+
+@import "~prismjs/themes/prism-okaidia.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
