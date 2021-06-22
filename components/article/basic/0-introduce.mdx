@@ -1,6 +1,41 @@
 export const meta = {
-  id: 'introduce',
-  name: '教程介绍',
+  id: 'overview',
+  name: '概览',
 }
 
-## 教程介绍
+## 关于本教程
+
+- 本教程基于Spark v3.1.2, Python 3.7
+- 主要参考[Spark官方文档](https://spark.apache.org/docs/3.1.2/)
+- 内容主要包括Spark核心，不包含集群的安装部署
+- 示例代码主要使用Python，未来可能会添加Scala示例
+
+## 关于Spark
+
+- Spark是用于处理大规模数据的计算引擎
+- Spark主要提供了Java，Scala，Python和R语言的高级API
+- Spark为结构化数据处理提供了[Spark SQL](https://spark.apache.org/docs/3.1.2/sql-programming-guide.html)
+- Spark为机器学习提供了[MLlib](https://spark.apache.org/docs/3.1.2/ml-guide.html)
+- Spark为图计算提供了[GraphX](https://spark.apache.org/docs/3.1.2/graphx-programming-guide.html)
+- Spark为增量计算和流处理提供了[Structed Stream](https://spark.apache.org/docs/3.1.2/structured-streaming-programming-guide.html)
+
+## 安装/运行 Spark
+
+Spark可以运行在单机或集群环境中，集群环境主要有以下几种
+
+- [Standalone](https://spark.apache.org/docs/3.1.2/spark-standalone.html)，Spark自带的集群管理器
+- [Apache Mesos](https://spark.apache.org/docs/3.1.2/running-on-mesos.html)
+- [Hadoop Yarn](https://spark.apache.org/docs/3.1.2/running-on-yarn.html)
+- [Kubernetes](https://spark.apache.org/docs/3.1.2/running-on-kubernetes.html)
+
+**但是**，本教程不涉及集群相关知识，对此感兴趣的同学可以自行阅读文档安装部署Spark集群。
+
+单机模式的Spark不需要任何安装，直接写代码即可单机运行。
+
+现在请确保你已经正确安装Python 3.7，并运行以下命令
+
+```bash
+pip install pyspark
+```
+
+Spark依赖已经成功安装，你可以开始学习Spark了！
