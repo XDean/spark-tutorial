@@ -5,9 +5,10 @@ export const meta = {
 
 ## 关于本教程
 
-- 本教程基于Spark v3.1.2, Python 3.7
+- 本教程基于Spark v3.1.2, Python 3.6
 - 主要参考[Spark官方文档](https://spark.apache.org/docs/3.1.2/)
-- 内容主要包括Spark核心，不包含集群的安装部署
+- 主要使用Dataframe而非RDD（关于它们是什么会在后文学到）
+- 内容不包含集群的安装部署
 - 示例代码主要使用Python，未来可能会添加Scala示例
 
 ## 关于Spark
@@ -32,7 +33,7 @@ Spark可以运行在单机或集群环境中，集群环境主要有以下几种
 
 单机模式的Spark不需要任何安装，直接写代码即可单机运行。
 
-现在请确保你已经正确安装Python 3.7，并运行以下命令
+现在请确保你已经正确安装Python，并运行以下命令
 
 ```bash
 pip install pyspark

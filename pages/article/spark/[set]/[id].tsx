@@ -1,9 +1,9 @@
-import {DefaultLayout} from "../../../components/layout/DefaultLayout";
+import {DefaultLayout} from "../../../../components/layout/DefaultLayout";
 import {useRouter} from 'next/router'
-import {TOC} from "../../../components/TOC";
+import {TOC} from "../../../../components/TOC";
 import {useEffect} from "react";
-import {Article} from "../../../components/Article";
-import {AllArticles} from "../../../components/article/article";
+import {Article} from "../../../../components/Article";
+import {AllArticles} from "../../../../components/article/article";
 import Head from 'next/head'
 
 export default function Index() {
@@ -13,7 +13,7 @@ export default function Index() {
   const article = articleSet.articles.find(e => e.meta.id === id) || articleSet.articles[0]
   useEffect(() => {
     if (router.isReady && (set !== articleSet.id || id !== article.meta.id)) {
-      router.replace(`/article/${articleSet.id}/${article.meta.id}`, undefined, {shallow: true})
+      router.replace(`/article/spark/${articleSet.id}/${article.meta.id}`, undefined, {shallow: true})
     }
   }, [router.isReady, id, article.meta.id])
 

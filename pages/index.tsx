@@ -10,7 +10,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const article = articleSet.articles[0]
   return {
     redirect: {
-      destination: `article/${articleSet.id}/${article.meta.id}`,
+      destination: `/article/spark/${articleSet.id}/${article.meta.id}`,
       permanent: false,
     },
   }

@@ -14,7 +14,7 @@ export const TOC = (props: Props) => {
       <ul className={'text-xl'}>
         {props.articleSet.articles.map(e => (
           <li key={e.meta.id}>
-            <Link href={`/article/${props.articleSet.id}/${e.meta.id}`}>
+            <Link href={`/article/spark/${props.articleSet.id}/${e.meta.id}`}>
               <div className={clsx(css.item, e.meta.id === props.article.meta.id ? css.activeItem : css.inactiveItem)}>
                 {e.meta.name}
               </div>
